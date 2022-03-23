@@ -19,14 +19,13 @@ With **Reindeer-uses-cases**, we propose to highlight TranSipedia flexibility an
 The use-case 1 is a **mutation sequence search**
 
 1. Select CCLE RNAseq (1019 trimmed experiment)
-2. Select the fasta file [BRAF_KRAS_kmer_alt.fa](https://github.com/Transipedia/Reindeer-use-cases/blob/main/BRAF_KRAS_kmer_alt.fa). 
+2. Select the fasta file [BRAF_KRAS_kmer_alt.fa](https://github.com/Transipedia/Reindeer-use-cases/blob/main/BRAF_V600.fa). 
    ![request](img/case1-request.png)
 3. Submit search
 4. Select `More details`  at the bottom of the page
    ![global result](img/case1-global-results.png)
-   <img src="img/case1-global-results.png" alt="drawing" width="800"/>
    
-5. Select `Histology` in`group by` box and then `Boxplot`
+5. Select `Histology` in `group by` box and then `Boxplot`
    ![detailed results](img/case1-details.png)
 
 
