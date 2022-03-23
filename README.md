@@ -8,7 +8,7 @@ With **Reindeer-uses-cases**, we propose to highlight TranSipedia flexibility an
 1. Select one or several indexes.
 2. Select the sequence mode: 
 	* sequences can be submitted as input by cut-paste step in a fasta format. The sequences could be kmers of at least 31nt length or longer sequences (see test sequences with Try it), 
-	* The user can up-loaded a list of sequences of interest in a fasta file. At most XXX sequences can be submitted at a time. For bigger datasets, the user needs to  interrogate the index by command lines (see [Reindeer](https://github.com/kamimrcht/REINDEER/blob/master/README.md)).
+	* The user can upload a list of sequences of interest in a fasta file. The maximum size of the request file is 1MB. For bigger datasets, the user needs to  interrogate the index from command line using [Reindeer](https://github.com/kamimrcht/REINDEER/blob/master/README.md) directly.
 3. Select the counting method: `raw` or `normalized` counts (kmer count/total kmers).
 4. Submit the request.
 5. Select the metadata button `More details` when available.
@@ -20,8 +20,8 @@ The use-case 1 is a **mutation sequence search**
 
 1. Open the [Transipedia web site](https://transipedia.org).
 2. Select CCLE RNAseq (1019 trimmed experiment)
-3. Select the fasta file [BRAF_V600.fa](https://github.com/Transipedia/Reindeer-use-cases/blob/main/BRAF_V600.fa). 
-   ![request](img/case1-request.png)
+3. Copy/paste the contain of [BRAF_V600.fa](https://github.com/Transipedia/Reindeer-use-cases/blob/main/BRAF_V600.fa) in place of the given example. then click on `Select`. 
+   ![request](img/case1-request.png) 
 4. Submit search
 5. Select `More details`  at the bottom of the page
    ![global result](img/case1-global-results.png)
