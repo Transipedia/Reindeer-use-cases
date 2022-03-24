@@ -18,15 +18,15 @@ With **Reindeer-uses-cases**, we propose to highlight TranSipedia flexibility an
 
 The use-case 1 is a **mutation sequence search**
 
-1. Copy the contain of [BRAF_V600.fa](https://github.com/Transipedia/Reindeer-use-cases/blob/main/BRAF_V600.fa).
-    ![global result](img/case1-select-requests.png) 
+1. Copy the contain of [BRAF_V600.fa](https://github.com/Transipedia/Reindeer-use-cases/blob/main/BRAF_V600.fa).  
+    ![global result](img/case1-select-requests.png)  
 2. Open the [Transipedia web site](https://transipedia.org).
 3. In the **Indexes** area, select `CCLE RNAseq (1019 trimmed experiment)`.
-4. In the **Request** area, remove the example requests and paste the previously selected requests, click on `Select`. 
+4. In the **Request** area, remove the example requests and paste the previously selected requests, click on `Select`.  
     ![request](img/case1-request.png) 
 5. optionnaly, select the counting method in **Counting method** area.
 6. Click on `Submit`
-7. Select `More details`  at the bottom of the page
+7. Select `More details`  at the bottom of the page  
     ![global result](img/case1-global-results.png)
 8. Select `Histology` in `group by` box and then `Boxplot`
     ![detailed results](img/case1-details.png)
