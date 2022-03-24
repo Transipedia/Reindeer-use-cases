@@ -18,7 +18,7 @@ With **Reindeer-uses-cases**, we propose to highlight TranSipedia flexibility an
 
 The use-case 1 is a **mutation sequence search**
 
-1. Copy the contain of [BRAF_V600.fa](https://github.com/Transipedia/Reindeer-use-cases/blob/main/BRAF_V600.fa) in place of the given example.
+1. Copy the contain of [BRAF_V600.fa](https://github.com/Transipedia/Reindeer-use-cases/blob/main/BRAF_V600.fa).
     ![global result](img/case1-select-requests.png) 
 2. Open the [Transipedia web site](https://transipedia.org).
 3. In the **Indexes** area, select `CCLE RNAseq (1019 trimmed experiment)`.
