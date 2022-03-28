@@ -19,7 +19,9 @@ With **Reindeer-uses-cases**, we propose to highlight TranSipedia flexibility an
 The use-case 1 is a **mutation sequence search**
 
 1. Copy the contain of [BRAF_V600.fa](https://github.com/Transipedia/Reindeer-use-cases/blob/main/BRAF_V600.fa).  
-    ![global result](img/case1-select-requests.png)  
+	![global result](img/case1-select-requests.png)  
+	The provided list corresponds to altered/mutated sequences from BRAF gene. The most frequent mutations in the CCLE dataset (V600) were selected from DepMap file (file. namexxx). The 31nt kmers were constructed with seqTailor from the vcf information.
+    
 2. Open the [Transipedia web site](https://transipedia.org).
 3. In the **Indexes** area, select `CCLE RNAseq (1019 trimmed experiment)`.
 4. In the **Request** area, remove the example requests and paste the previously selected requests, click on `Select`.  
@@ -30,5 +32,6 @@ The use-case 1 is a **mutation sequence search**
     ![global result](img/case1-global-results.png)
 8. Select `Histology` in `group by` box and then `Boxplot`
     ![detailed results](img/case1-details.png)
+    You will obtain this graph that confirms the presence of BRAF_V600 mutation mainly observed in Carcinoma and melanoma. You can then check  the kmer specificity on Indexes form normal cells (wt).
 
 
