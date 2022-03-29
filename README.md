@@ -20,7 +20,7 @@ The use-case 1 is a **mutation sequence search**
 
 1. Copy the contain of [BRAF_V600.fa](https://github.com/Transipedia/Reindeer-use-cases/blob/main/BRAF_V600.fa).  
 	![global result](img/case1-select-requests.png)  
-	The provided list corresponds to altered/mutated sequences from BRAF gene. The most frequent mutations in the CCLE dataset (V600) were selected from DepMap file [CCLE_mutations.csv](https://depmap.org/portal/download/all/) (release 21Q4). The 31nt kmers were constructed with seqTailor from the vcf information.
+	The provided list corresponds to altered/mutated sequences from BRAF gene. The most frequent mutations in the CCLE dataset (V600) were selected from the DepMap file  [CCLE_mutations.csv](https://depmap.org/portal/download/all/) (release 21Q4). The 31nt kmers were constructed with seqTailor from the vcf information.
     
 2. Open the [Transipedia web site](https://transipedia.org).
 3. In the **Indexes** area, select `CCLE RNAseq (1019 trimmed experiment)`.
