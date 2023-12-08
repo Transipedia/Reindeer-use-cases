@@ -7,31 +7,71 @@ With **Reindeer-uses-cases**, we propose to highlight TranSipedia flexibility an
 
 1. Select one or several indexes.
 2. Select the sequence mode: 
-	* sequences can be submitted as input by cut-paste step in a fasta format. The sequences could be kmers of at least 31nt length or longer sequences (see test sequences with Try it), 
+	* sequences can be submitted as input by cut-paste step in a fasta format. 
+	* The sequences could be kmers of at least 31nt length or longer sequences (see test sequences with Try it), 
 	* The user can upload a list of sequences of interest in a fasta file. The maximum size of the request file is 1MB. For bigger datasets, the user needs to  interrogate the index from command line using [Reindeer](https://github.com/kamimrcht/REINDEER/blob/master/README.md) directly.
 3. Select the counting method: `raw` or `normalized` counts (kmer count/total kmers).
 4. `Submit` the request.
 5. Select the metadata button `More details` when available.
 
 
-## USE_CASE 1
+## USE-CASE 1: mutation sequence search
 
-The use-case 1 is a **mutation sequence search**
-
-1. Copy the contents of [BRAF_V600.fa](https://github.com/Transipedia/Reindeer-use-cases/blob/main/BRAF_V600.fa).  
+1. Copy the contain of [BRAF_V600.fa](https://github.com/Transipedia/Reindeer-use-cases/blob/main/BRAF_V600.fa).  
 	![global result](img/case1-select-requests.png)  
-	The provided list corresponds to altered/mutated sequences from BRAF gene. The most frequent mutations in the CCLE dataset (V600) were selected from the DepMap file  [CCLE_mutations.csv](https://depmap.org/portal/download/all/) (release 21Q4). The 31nt kmers were constructed with [seqTailor](http://shiva.rockefeller.edu/SeqTailor/) from the vcf information.
+	The provided list corresponds to altered/mutated sequences from BRAF gene. 
+The most frequent mutations in the CCLE dataset (V600) were selected from the 
+DepMap file  [CCLE_mutations.csv](https://depmap.org/portal/download/all/) 
+(release 21Q4). The 31nt kmers were constructed with 
+[seqTailor](http://shiva.rockefeller.edu/SeqTailor/) from the vcf information.
     
 2. Open the [Transipedia web site](https://transipedia.org).
-3. In the **Indexes** area, select `CCLE RNAseq (1019 trimmed experiment)`.
+3. In the **Indexes** area, select `CCLE RNAseq (1019 experiments)`.
 4. In the **Request** area, remove the example requests and paste the previously selected requests, click on `Select`.  
     ![request](img/case1-request.png) 
-5. optionnaly, select the counting method in **Counting method** area.
-6. Click on `Submit`
-7. Select `More details`  at the bottom of the page  
+5. optionnally, select the counting method in **Counting method** area.
+6. Check your selection in the ``Your request`` area.
+7. Click on `Submit`
+8. Select `More details`  at the bottom of the page  
     ![global result](img/case1-global-results.png)
-8. Select `Histology` in `group by` box and then `Boxplot`
+9. Select `Histology` in `group by` box and then `Boxplot`
     ![detailed results](img/case1-details.png)
-    You will obtain this graph that confirms the presence of BRAF_V600 mutation mainly observed in Carcinoma and melanoma. You can then check  the kmer specificity on Indexes form normal cells (wt).
+    You will obtain this graph that confirms the presence of BRAF_V600 mutation mainly observed in Carcinoma and melanoma. 
+    You can then check  the kmer specificity on Indexes form normal cells (wt).
+
+
+## USE-CASE 2: spliced junction sequence search
+
+The query sequence was the 60-nt fragment spanning exon 3-4 junction, specific 
+to androgen receptor variant AR-V7 (Gencode transcript AR-204).
+
+This spliced junction is most frequently expressed in PRAD tumors (<ref of the
+ publication\>).
+
+
+1. Copy the the spliced junction fasta sequence below:
+
+```
+>AR-204 (AR V7) E3-4
+AATGTTATGAAGCAGGGATGACTCTGGGAGAAAAATTCCGGGTTGGCAATTGCAAGCATC
+```
+
+
+
+2. Open the [Transipedia web site](https://transipedia.org).
+3. In the **Indexes** area, select CCLE RNAseq.
+4. In the **Request** area, remove the example requests and paste the previously selected requests, 
+click on ``Select``.
+5. Optionnally, select the counting method in **Counting method** area.
+6. Check your selection in the ``Your request`` area.
+7. Click on ``Submit`` in ``Your request``.
+    ![request](img/case2-global-results.png)
+8. Select **More details** at the bottom of the page.
+9. In **Group By** box, select ``tcga_code`` and then ``Boxplot`` in **Plot Type**. You will obtain 
+a graph that confirms the presence of BRAF_V600 mutation specifically  observed in PRAD. You can 
+then check the kmer specificity on Indexes form normal cells (type **wt** keyword in the index 
+search bar).
+    ![request](img/case2-details.png)
+
 
 
