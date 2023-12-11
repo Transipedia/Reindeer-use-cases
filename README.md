@@ -50,8 +50,7 @@ DepMap file  [CCLE_mutations.csv](https://depmap.org/portal/download/all/)
 The query sequence was the 60-nt fragment spanning exon 3-4 junction, specific 
 to androgen receptor variant AR-V7 (Gencode transcript AR-204).
 
-This spliced junction is most frequently expressed in PRAD tumors (<ref of the
- publication\>).
+This spliced junction is most frequently expressed in PRAD tumors ([https://europepmc.org/article/med/31055861](https://europepmc.org/article/med/31055861)).
 
 
 1. Copy the the spliced junction fasta sequence below:
