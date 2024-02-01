@@ -22,9 +22,24 @@ With **Reindeer-uses-cases**, we propose to highlight TranSipedia flexibility an
 
 ## USE-CASE 1: mutation sequence search
 
-1. Copy the contain of [BRAF_V600.fa](https://github.com/Transipedia/Reindeer-use-cases/blob/main/BRAF_V600.fa).  
-	![global result](img/case1-select-requests.png)  
-	The provided list corresponds to altered/mutated sequences from BRAF gene. 
+1. Copy the contain of the fasta content:
+
+```
+>7_140453136_A_T|+|alt
+CTCCATCGAGATTTCTCTGTAGCTAGACCAA
+>7_140453136_A_T|-|alt
+TTGGTCTAGCTACAGAGAAATCTCGATGGAG
+>7_140453136_AC_TT|+|alt
+CTCCATCGAGATTTCTTTGTAGCTAGACCAA
+>7_140453136_AC_TT|-|alt
+TTGGTCTAGCTACAAAGAAATCTCGATGGAG
+>7_140453137_C_T|+|alt
+TCCATCGAGATTTCATTGTAGCTAGACCAAA
+>7_140453137_C_T|-|alt
+TTTGGTCTAGCTACAATGAAATCTCGATGGA
+```
+
+The provided list corresponds to altered/mutated sequences from BRAF gene. 
 The most frequent mutations in the CCLE dataset (V600) were selected from the 
 DepMap file  [CCLE_mutations.csv](https://depmap.org/portal/download/all/) 
 (release 21Q4). The 31nt kmers were constructed with 
@@ -57,7 +72,7 @@ This spliced junction is most frequently expressed in PRAD tumors ([https://euro
 
 ```
 >AR-204 (AR V7) E3-4
-AATGTTATGAAGCAGGGATGACTCTGGGAGAAAAATTCCGGGTTGGCAATTGCAAGCATC
+TTATGAAGCAGGGATGACTCTGGGAGAAAAATTCCGGGTTGGCAATTGCAA
 ```
 
 
