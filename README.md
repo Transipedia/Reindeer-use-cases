@@ -22,7 +22,7 @@ These use cases demonstrate applications of the server for retrieving different 
 
 ## Use-case 1: finding mutations
 
-1. Copy the contain of the fasta content:
+1. Copy the query (fasta formated):
 
 ```
 >7_140453136_A_T|+|alt
