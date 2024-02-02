@@ -1,7 +1,7 @@
 # Reindeer use cases
 
-* use-case 1 [finding mutations](#use-case-1-mutation-sequence-search)
-* use-case 2 [finding splice junctions](#use-case-2-spliced-junction-sequence-search)
+* use-case 1 [finding mutations](#use-case-1-finding-mutations)
+* use-case 2 [finding splice junctions](#use-case-2-finding splice junctions)
 
 
 An increasing number of public RNA-seq datasets is available on the SRA and ENA repositories. This huge body of publicly available RNA-­seq libraries is a treasure of functional information. The objective of the Transipedia project is to provide the scientific community with a new way to obtain insights from NGS data that may deliver results not achievable through traditional means. Organizing large scale data collection is performed with REINDEER, that builds a data-structure that indexes k-mers and their abundances from a collection of raw RNA-seq. The TranSipedia web site then provides an easy way to mine information from these big data.
@@ -20,7 +20,7 @@ These use cases demonstrate applications of the server for retrieving different 
 5. Select the metadata button `More details` when available.
 
 
-## USE-CASE 1: mutation sequence search
+## Use-case 1: finding mutation
 
 1. Copy the contain of the fasta content:
 
@@ -60,7 +60,7 @@ DepMap file  [CCLE_mutations.csv](https://depmap.org/portal/download/all/)
     You can then check  the kmer specificity on Indexes form normal cells (wt).
 
 
-## USE-CASE 2: spliced junction sequence search
+## Use-case 2: finding splice junctions
 
 The query sequence was the 60-nt fragment spanning exon 3-4 junction, specific 
 to androgen receptor variant AR-V7 (Gencode transcript AR-204).
