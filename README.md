@@ -1,6 +1,6 @@
 # Reindeer use cases
 
-* use-case 1: [finding mutations](#use-case-1-finding-mutation)
+* use-case 1: [finding mutations](#use-case-1-finding-mutations)
 * use-case 2: [finding splice junctions](#use-case-2-finding-splice-junctions)
 
 
@@ -20,7 +20,7 @@ These use cases demonstrate applications of the server for retrieving different 
 5. Select the metadata button `More details` when available.
 
 
-## Use-case 1: finding mutation
+## Use-case 1: finding mutations
 
 1. Copy the contain of the fasta content:
 
