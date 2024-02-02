@@ -1,12 +1,12 @@
 # Reindeer use cases
 
-* [use-case 1](#use-case-1-mutation-sequence-search)
-* [use-case 2](#use-case-2-spliced-junction-sequence-search)
+* use-case 1 [finding mutations](#use-case-1-mutation-sequence-search)
+* use-case 2 [finding splice junctions](#use-case-2-spliced-junction-sequence-search)
 
 
-An increasing number of public RNA-seq datasets are now available with more than  500,000 RNA-seq libraries listed on the SRA repository, over 7000 species. This huge body of publicly available RNA-­seq libraries is a treasure of functional information.
-The objective of the Transipedia project is to provide the scientific community with a new way to obtain insights from OMICS data that may deliver results not obtainable through traditional means. Organizing large scale data collection is performed towards REINDEER, that builds a data-structure that indexes k-mers and their abundances from a collection of raw RNA-seq. The TranSipedia web site then provides a high flexibility for producing smart information  from big data.  
-With **Reindeer-uses-cases**, we propose to highlight TranSipedia flexibility and computational efficiency that make it attractive as a new transcriptional profiling approach for a wide variety of applications.
+An increasing number of public RNA-seq datasets is available on the SRA and ENA repositories. This huge body of publicly available RNA-­seq libraries is a treasure of functional information. The objective of the Transipedia project is to provide the scientific community with a new way to obtain insights from NGS data that may deliver results not achievable through traditional means. Organizing large scale data collection is performed with REINDEER, that builds a data-structure that indexes k-mers and their abundances from a collection of raw RNA-seq. The TranSipedia web site then provides an easy way to mine information from these big data.
+These use cases demonstrate applications of the server for retrieving different types of events. 
+
 
 ## Sequence search at Transipedia web site
 
