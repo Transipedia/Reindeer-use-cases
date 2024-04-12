@@ -15,9 +15,9 @@ These use cases demonstrate applications of the server for retrieving different 
 	* sequences can be submitted as input by cut-paste step in a fasta format. 
 	* The sequences could be kmers of at least 31nt length or longer sequences (see test sequences with Try it), 
 	* The user can upload a list of sequences of interest in a fasta file. The maximum size of the request file is 1MB. For bigger datasets, the user needs to  interrogate the index from command line using [Reindeer](https://github.com/kamimrcht/REINDEER/blob/master/README.md) directly.
-3. Select the counting method: `raw` or `normalized` counts (kmer count/total kmers).
-4. `Submit` the request.
-5. Select the metadata button `More details` when available.
+3. Select the counting method: **raw** or **normalized** counts (kmer count/total kmers).
+4. **Submit** the request.
+5. Select the metadata button **More details** when available.
 
 
 ## Use-case 1: finding mutations
@@ -46,15 +46,15 @@ DepMap file  [CCLE_mutations.csv](https://depmap.org/portal/download/all/)
 [seqTailor](http://shiva.rockefeller.edu/SeqTailor/) from the vcf information.
     
 2. Open the [Transipedia web site](https://transipedia.org).
-3. In the **Indexes** area, select `CCLE RNAseq (1019 experiments)`.
+3. In the **Indexes** area, select **CCLE RNAseq (1019 experiments)**.
 4. In the **Request** area, remove the example requests and paste the previously selected requests, click on `Select`.  
     ![request](img/case1-request.png) 
 5. optionnally, select the counting method in **Counting method** area.
-6. Check your selection in the ``Your request`` area.
-7. Click on `Submit`
-8. Select `More details`  at the bottom of the page  
+6. Check your selection in the **Your request** area.
+7. Click on **Submit**
+8. Select **More details**  at the bottom of the page  
     ![global result](img/case1-global-results.png)
-9. Select `Histology` in `group by` box and then `Boxplot`
+9. Select **Histology** in **group by** box and then **Boxplot**
     ![detailed results](img/case1-details.png)
     You will obtain this graph that confirms the presence of BRAF_V600 mutation mainly observed in Carcinoma and melanoma. 
     You can then check  the kmer specificity on Indexes form normal cells (wt).
@@ -80,17 +80,63 @@ TTATGAAGCAGGGATGACTCTGGGAGAAAAATTCCGGGTTGGCAATTGCAA
 2. Open the [Transipedia web site](https://transipedia.org).
 3. In the **Indexes** area, select CCLE RNAseq.
 4. In the **Request** area, remove the example requests and paste the previously selected requests, 
-click on ``Select``.
+click on **Select**.
 5. Optionnally, select the counting method in **Counting method** area.
-6. Check your selection in the ``Your request`` area.
-7. Click on ``Submit`` in ``Your request``.
+6. Check your selection in the **Your request** area.
+7. Click on **Submit** in **Your request**.
     ![request](img/case2-global-results.png)
 8. Select **More details** at the bottom of the page.
-9. In **Group By** box, select ``tcga_code`` and then ``Boxplot`` in **Plot Type**. You will obtain 
+9. In **Group By** box, select **tcga_code** and then **Boxplot** in **Plot Type**. You will obtain 
 a graph that confirms the presence of BRAF_V600 mutation specifically  observed in PRAD. You can 
 then check the kmer specificity on Indexes form normal cells (type **wt** keyword in the index 
 search bar).
     ![request](img/case2-details.png)
+
+
+## Use-case 3: finding chimeric junctions
+
+1 / Copy the query (fasta formated):
+
+```
+>MLLT3---KMT2A-2
+GGACTGGGTTGTTCAGACTTAAAGTCCACTC
+>RUNX1---RUNX1T1-3
+CCCCGAGAACCTCGAAATCGTACTGAGAAGC
+>BCR---ABL1-2
+ACCATCAATAAGGAAGAAGCCCTTCAGCGGC
+>TMPRSS2---ERG-1
+CGCCTGGAGCGCGGCAGGAAGCCTTATCAGT
+>SR786|SRR8615372_NPM1--ALK_33
+GGACAGCACTTAGTAGTGTACCGCCGGAAGCA
+>FGFR3---TACC3-5
+CGTGACGTCCACCGACGTAAAGGCGACACAG
+>EXOSC10---MTOR
+ACAGGTTGCTTCAGTGAAATTTTGGACGGTG
+>VTI1A---TCF7L2
+AGAAGCGAAAGAACTGTCTAACAAAGTGCCA
+>CBFB_MYH11
+GGGAGGAAATGGAGGTCCATGAGCTGGAGAA
+>PML-RARA
+GGCGCCGGGGAGGCAGCCATTGAGACCCAGA
+```
+
+The provided list corresponds to 31nt sequences covering the chimeric junctions. The most frequent chimeric RNA in the **CCLE dataset** (V600) were selected (i) from the DepMap file CCLE_fusion.csv ( release 21Q4), (ii) from **TCGA** ( <https://doi.org/10.1016/j.celrep.2018.03.050>), and (iii) from **LEUCEGENE** (<https://leucegene.ca/research-development/>). 
+
+2. Open the Transipedia web site <https://transipedia.org>. 
+3. In the **Indexes** area, select **CCLE RNAseq (1019 experiments)**. 
+4. In the **Request** area, remove the example requests and paste the previously selected requests, click on **Select**.
+5. Select **counting method** : ex raw counts
+6. Check your selection in the Your **request area**.
+7. Click on **Submit**
+8. Select **More details** at the bottom of the page
+9. Select name in **Samples Labels** 
+10.  Select **tissue** in **group by** 
+
+You will obtain this graph that confirms the presence of the chimeric junctions in some tissues. You can then check the kmer specificity on Indexes from normal cells (enter "wt" in the indexes search bar ). 
+
+![request](img/case3-samples-grouped-by-tissues.png)
+
+
 
 
 
