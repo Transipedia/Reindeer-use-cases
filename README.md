@@ -95,32 +95,34 @@ search bar).
 
 ## Use-case 3: finding chimeric junctions
 
-1. Copy the query (fasta formated):
+The fasta provided list below corresponds to 31nt sequences covering the chimeric junctions. The most frequent chimeric RNA in the **CCLE dataset** (V600) were selected (i) from the DepMap file CCLE_fusion.csv ( release 21Q4), (ii) from **TCGA** ( <https://doi.org/10.1016/j.celrep.2018.03.050>), and (iii) from **LEUCEGENE** (<https://leucegene.ca/research-development/>). 
 
-	>MLLT3---KMT2A-2
-	GGACTGGGTTGTTCAGACTTAAAGTCCACTC
-	>RUNX1---RUNX1T1-3
-	CCCCGAGAACCTCGAAATCGTACTGAGAAGC
-	>BCR---ABL1-2
-	ACCATCAATAAGGAAGAAGCCCTTCAGCGGC
-	>TMPRSS2---ERG-1
-	CGCCTGGAGCGCGGCAGGAAGCCTTATCAGT
-	>SR786|SRR8615372_NPM1--ALK_33
-	GGACAGCACTTAGTAGTGTACCGCCGGAAGCA
-	>FGFR3---TACC3-5
-	CGTGACGTCCACCGACGTAAAGGCGACACAG
-	>EXOSC10---MTOR
-	ACAGGTTGCTTCAGTGAAATTTTGGACGGTG
-	>VTI1A---TCF7L2
-	AGAAGCGAAAGAACTGTCTAACAAAGTGCCA
-	>CBFB_MYH11
-	GGGAGGAAATGGAGGTCCATGAGCTGGAGAA
-	>PML-RARA
-	GGCGCCGGGGAGGCAGCCATTGAGACCCAGA
+```
+>MLLT3---KMT2A-2
+GGACTGGGTTGTTCAGACTTAAAGTCCACTC
+>RUNX1---RUNX1T1-3
+CCCCGAGAACCTCGAAATCGTACTGAGAAGC
+>BCR---ABL1-2
+ACCATCAATAAGGAAGAAGCCCTTCAGCGGC
+>TMPRSS2---ERG-1
+CGCCTGGAGCGCGGCAGGAAGCCTTATCAGT
+>SR786|SRR8615372_NPM1--ALK_33
+GGACAGCACTTAGTAGTGTACCGCCGGAAGCA
+>FGFR3---TACC3-5
+CGTGACGTCCACCGACGTAAAGGCGACACAG
+>EXOSC10---MTOR
+ACAGGTTGCTTCAGTGAAATTTTGGACGGTG
+>VTI1A---TCF7L2
+AGAAGCGAAAGAACTGTCTAACAAAGTGCCA
+>CBFB_MYH11
+GGGAGGAAATGGAGGTCCATGAGCTGGAGAA
+>PML-RARA
+GGCGCCGGGGAGGCAGCCATTGAGACCCAGA
+```
 
 
-The provided list corresponds to 31nt sequences covering the chimeric junctions. The most frequent chimeric RNA in the **CCLE dataset** (V600) were selected (i) from the DepMap file CCLE_fusion.csv ( release 21Q4), (ii) from **TCGA** ( <https://doi.org/10.1016/j.celrep.2018.03.050>), and (iii) from **LEUCEGENE** (<https://leucegene.ca/research-development/>). 
 
+1. Copy the list
 2. Open the Transipedia web site <https://transipedia.org>. 
 3. In the **Indexes** area, select **CCLE RNAseq (1019 experiments)**. 
 4. In the **Request** area, remove the example requests and paste the previously selected requests, click on **Select**.
