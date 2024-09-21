@@ -1,6 +1,6 @@
 # Filtered probes for Reindeer queries
 
-Fasta files containing probe sequences for Reindeer queries. Low complexity and multi-hit k-mers were removed as described in [the Reindeer CCLE manuscript](https://doi.org/10.1101/2024.02.27.581927).
+Fasta files containing probe sequences for Reindeer queries. Low complexity and multi-hit k-mers were removed as described in [the Reindeer CCLE manuscript](https://www.biorxiv.org/content/10.1101/2024.02.27.581927v1).
 
 * probes_cosmic_mutation.fa: likely oncogenic mutations from the Cosmic V100 [Cancer Mutation Census (CMC)](https://cancer.sanger.ac.uk/cmc/home) tier 1, 2 and 3. Each mutation is represented by 2 probes: alt and ref. Probe length is max. 61nt.
 
