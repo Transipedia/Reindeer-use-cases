@@ -1,4 +1,4 @@
-# Filtered Probe sets for Reindeer queries
+# Filtered probes for Reindeer queries
 
 Fasta files containing probe sequences for Reindeer queries. Low complexity and multi-hit k-mers were removed as described in [the Reindeer CCLE manuscript](https://doi.org/10.1101/2024.02.27.581927).
 
