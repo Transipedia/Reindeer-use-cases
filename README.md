@@ -4,26 +4,25 @@
 * use-case 2: [finding splice junctions](#use-case-2-finding-splice-junctions)
 * use-case 3: [finding chimeras](#Use-case-3-finding-chimeric-junctions)
 
-
 An increasing number of public RNA-seq datasets is available on the SRA and ENA repositories. This huge body of publicly available RNA-­seq libraries is a treasure of functional information. The objective of the Transipedia project is to provide the scientific community with a new way to obtain insights from NGS data that may deliver results not achievable through traditional means. Organizing large scale data collection is performed with REINDEER, that builds a data-structure that indexes k-mers and their abundances from a collection of raw RNA-seq. The TranSipedia web site then provides an easy way to mine information from these big data.
 These use cases demonstrate applications of the server for retrieving different types of events. 
 
+Note that additional query probes are provided in the /probes subdirectory. 
 
 ## Sequence search at Transipedia web site
 
 1. Select one or several indexes.
 2. Select the sequence mode: 
-	* sequences can be submitted as input by cut-paste step in a fasta format. 
-	* The sequences could be kmers of at least 31nt length or longer sequences (see test sequences with Try it), 
-	* The user can upload a list of sequences of interest in a fasta file. The maximum size of the request file is 1MB. For bigger datasets, the user needs to  interrogate the index from command line using [Reindeer](https://github.com/kamimrcht/REINDEER/blob/master/README.md) directly.
+	* sequences (probes) can be submitted as input by cut-paste step in a fasta format. 
+	* The sequence probes can be kmers of at least 31nt length or longer (see test sequences with Try it), 
+	* Users can upload a list of sequences of interest in a fasta file. The maximum size of the query file is 1MB. For bigger datasets, users need to query the index from the command line using [Reindeer](https://github.com/kamimrcht/REINDEER/blob/master/README.md) directly.
 3. Select the counting method: **raw** or **normalized** counts (kmer count/total kmers).
-4. **Submit** the request.
+4. **Submit** the query.
 5. Select the metadata button **More details** when available.
-
 
 ## Use-case 1: finding mutations
 
-1. Copy the query (fasta formated):
+1. Copy the probe sequences (fasta formated):
 
 ```
 >7_140453136_A_T|+|alt
@@ -40,7 +39,7 @@ TCCATCGAGATTTCATTGTAGCTAGACCAAA
 TTTGGTCTAGCTACAATGAAATCTCGATGGA
 ```
 
-The provided list corresponds to altered/mutated sequences from BRAF gene. 
+The provided list corresponds to altered/mutated sequences from the BRAF gene. 
 The most frequent mutations in the CCLE dataset (V600) were selected from the 
 DepMap file  [CCLE_mutations.csv](https://depmap.org/portal/download/all/) 
 (release 21Q4). The 31nt kmers were constructed with 
@@ -63,7 +62,7 @@ DepMap file  [CCLE_mutations.csv](https://depmap.org/portal/download/all/)
 
 ## Use-case 2: finding splice junctions
 
-The query sequence was the 60-nt fragment spanning exon 3-4 junction, specific 
+The query sequence here is the 51-nt fragment spanning exon 3-4 junction, specific 
 to androgen receptor variant AR-V7 (Gencode transcript AR-204).
 
 This spliced junction is most frequently expressed in PRAD tumors ([https://europepmc.org/article/med/31055861](https://europepmc.org/article/med/31055861)).
@@ -75,7 +74,6 @@ This spliced junction is most frequently expressed in PRAD tumors ([https://euro
 >AR-204 (AR V7) E3-4
 TTATGAAGCAGGGATGACTCTGGGAGAAAAATTCCGGGTTGGCAATTGCAA
 ```
-
 
 
 2. Open the [Transipedia web site](https://transipedia.org).
@@ -96,7 +94,7 @@ search bar).
 
 ## Use-case 3: finding chimeric junctions
 
-The fasta provided list below corresponds to 31nt sequences covering the chimeric junctions. The most frequent chimeric RNA in the **CCLE dataset** (V600) were selected (i) from the DepMap file CCLE_fusion.csv ( release 21Q4), (ii) from **TCGA** ( <https://doi.org/10.1016/j.celrep.2018.03.050>), and (iii) from **LEUCEGENE** (<https://leucegene.ca/research-development/>). 
+The fasta sequences below correspond to 31nt fragment covering chimeric junctions. The most frequent chimeric RNA in the **CCLE dataset** (V600) were selected (i) from the DepMap file CCLE_fusion.csv ( release 21Q4), (ii) from **TCGA** ( <https://doi.org/10.1016/j.celrep.2018.03.050>), and (iii) from **LEUCEGENE** (<https://leucegene.ca/research-development/>). 
 
 ```
 >MLLT3---KMT2A-2
@@ -121,8 +119,6 @@ GGGAGGAAATGGAGGTCCATGAGCTGGAGAA
 GGCGCCGGGGAGGCAGCCATTGAGACCCAGA
 ```
 
-
-
 1. Copy the list
 2. Open the Transipedia web site <https://transipedia.org>. 
 3. In the **Indexes** area, select **CCLE RNAseq (1019 experiments)**. 
@@ -134,7 +130,7 @@ GGCGCCGGGGAGGCAGCCATTGAGACCCAGA
 9. Select name in **Samples Labels** 
 10.  Select **tissue** in **group by** 
 
-You will obtain this graph that confirms the presence of the chimeric junctions in some tissues. You can then check the kmer specificity on Indexes from normal cells (enter "wt" in the indexes search bar ). 
+One obtains this graph that confirms the presence of the chimeric junctions in specific cell lines. One can then check the kmer specificity on Indexes from normal cells (enter "wt" in the indexes search bar ). 
 
 ![request](img/case3-samples-grouped-by-tissues.png)
 
