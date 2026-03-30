@@ -1,3 +1,8 @@
+
+[![Contact](https://img.shields.io/badge/Contact-Therese_Commes-lightgreen)](mailto:Therese.Commes@inserm.fr)
+[![Contact](https://img.shields.io/badge/Contact-Chloe_Bessière-lightgreen)](mailto:chloé.bessiere@inserm.fr)
+[![Contact](https://img.shields.io/badge/Contact-Florence_Ruffle-lightgreen)](mailto:florence.ruffle@inserm.fr)
+
 # Reindeer use cases
 
 * use-case 1: [finding mutations](#use-case-1-finding-mutations)
