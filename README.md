@@ -1,4 +1,7 @@
 
+[![Publication](https://img.shields.io/badge/Publication-transipedia.org-blue)](https://link.springer.com/article/10.1186/s13059-024-03413-5)
+
+
 [![Contact](https://img.shields.io/badge/Contact-Therese_Commes-lightgreen)](mailto:Therese.Commes@inserm.fr)
 [![Contact](https://img.shields.io/badge/Contact-Chloe_Bessière-lightgreen)](mailto:chloé.bessiere@inserm.fr)
 [![Contact](https://img.shields.io/badge/Contact-Florence_Ruffle-lightgreen)](mailto:florence.ruffle@inserm.fr)
