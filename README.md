@@ -141,6 +141,7 @@ One obtains this graph that confirms the presence of the chimeric junctions in s
 ![request](img/case3-samples-grouped-by-tissues.png)
 
 
+## Citation
 
-
+Bessière, C., Xue, H., Guibert, B. et al. Transipedia.org: k-mer-based exploration of large RNA sequencing datasets and application to cancer data. Genome Biol 25, 266 (2024). <[DOI:10.1186/s13059-024-03413-5](https://doi.org/10.1186/s13059-024-03413-5)> 
 
